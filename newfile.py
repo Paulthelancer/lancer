@@ -1,0 +1,12 @@
+# Fibonacci Series upto N terms
+k=int(input("Input Number of terms you want to generate the series "))
+second_last=0
+last=1
+now=0
+print(0)
+print(1)
+for i in range (1,k-1):
+    now=last+second_last
+    second_last=last
+    last=now
+    print(now)
